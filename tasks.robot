@@ -16,7 +16,8 @@ ${ORDERS}    https://robotsparebinindustries.com/orders.csv
 Order robots from RobotSpareBin Industries Inc
     Open Available Browser    https://robotsparebinindustries.com/#/robot-order
     Open the robot order website
-    Fill form(${row})
+    Fill form    $row
+    Create receipt    $row
 
 
 *** Keywords ***
